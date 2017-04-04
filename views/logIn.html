@@ -1,5 +1,5 @@
  <!-- Modal for LogIn/SignUp-->
-        <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal fade bs-modal-sm" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-sm">
             <div class="modal-content">
               <br>
@@ -7,12 +7,12 @@
                 <ul id="myTab" class="nav nav-tabs">
                   <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
                   <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
-                  <li class=""><a href="#why" data-toggle="tab">Problem?</a></li>
+                  <li class=""><a href="#problem" data-toggle="tab">Problem?</a></li>
                 </ul>
               </div>
               <div class="modal-body">
                 <div id="myTabContent" class="tab-content">
-                  <div class="tab-pane fade in" id="why">
+                  <div class="tab-pane fade in" id="problem">
                     <p></p><br> Please contact <a mailto:href="dmin2@wisc.edu"></a>dmin2@wisc.edu</a> for any other inquiries.</p>
                   </div>
                   <div class="tab-pane fade active in" id="signin">
@@ -62,9 +62,17 @@
 
                       <!-- Text input-->
                       <div class="control-group">
-                        <label class="control-label" for="name">Name:</label>
+                        <label class="control-label" for="name">First name:</label>
                         <div class="controls">
-                          <input id="name" name="name" class="form-control" type="text" placeholder="Kevin Zhou" class="input-large" required="">
+                          <input id="firstName" name="firstName" class="form-control" type="text" placeholder="Kevin" class="input-large" required="">
+                        </div>
+                      </div>
+
+                                            <!-- Text input-->
+                      <div class="control-group">
+                        <label class="control-label" for="name">Last name:</label>
+                        <div class="controls">
+                          <input id="lastName" name="lastName" class="form-control" type="text" placeholder="Zhou" class="input-large" required="">
                         </div>
                       </div>
 
